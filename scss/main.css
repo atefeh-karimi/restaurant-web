@@ -147,7 +147,7 @@ header .header__social span:hover {
 }
 
 .gallery__container h2 {
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-weight: bold;
 }
 
@@ -365,6 +365,8 @@ footer {
 
 .footer__feedback {
   padding-left: 1rem;
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
 }
 
 .footer__feedback a {
@@ -373,6 +375,11 @@ footer {
 
 .footer__feedback p {
   margin-bottom: 0;
+}
+
+.footer__socials {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .footer__socials ul {
@@ -423,6 +430,12 @@ footer {
   }
   .footer__container .footer__feedback {
     padding-left: 0;
+    -ms-grid-column-align: auto;
+        justify-self: auto;
+  }
+  .footer__container .footer__socials {
+    -ms-grid-column-align: auto;
+        justify-self: auto;
   }
   .footer__container .footer__socials-menu li {
     margin-left: 0;
@@ -436,6 +449,9 @@ footer {
     height: 80vh;
   }
   /*========================GALLERY===================*/
+  .gallery__container h2 {
+    padding-top: 2rem;
+  }
   .gallery__cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -510,6 +526,7 @@ footer {
   }
   .footer__container .apps img {
     margin: 0;
+    margin-bottom: 8px;
     width: 100px;
   }
   .footer__container .footer__socials-menu {

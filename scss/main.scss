@@ -111,7 +111,7 @@ header {
   text-align: center;
   font-family: $font-josefinSans;
   h2 {
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-weight: bold;
   }
 }
@@ -298,6 +298,7 @@ footer {
 
 .footer__feedback {
   padding-left: 1rem;
+  justify-self: self-end;
   a {
     color: black;
   }
@@ -307,6 +308,7 @@ footer {
 }
 
 .footer__socials {
+  justify-self: center;
   ul {
     list-style-type: none;
     padding-left: 0;
@@ -353,6 +355,11 @@ footer {
 
     .footer__feedback {
       padding-left: 0;
+      justify-self: auto;
+    }
+
+    .footer__socials {
+      justify-self: auto;
     }
 
     .footer__socials-menu li {
@@ -369,6 +376,11 @@ footer {
   }
 
   /*========================GALLERY===================*/
+  .gallery__container {
+    h2 {
+      padding-top: 2rem;
+    }
+  }
   .gallery__cards {
     grid-template-columns: 1fr;
   }
@@ -444,6 +456,7 @@ footer {
       flex-wrap: wrap;
       img {
         margin: 0;
+        margin-bottom: 8px;
         width: 100px;
       }
     }
